@@ -7,7 +7,7 @@
     <title>A 9e osztály oldala a gardverelemekről</title>
     <link rel="stylesheet" href="./style/styles.css">
     <style>
-body {background-image: url(../pict/HARDWARE.jpg)}
+body {background-image: url(../pict/HARDWARE.jpg); background-repeat:no-repeat;background-size: cover;background-attachment: fixed;}
     </style>
 </head>
 <body>
