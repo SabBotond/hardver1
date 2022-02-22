@@ -1,2 +1,2 @@
-body {background-image: url("../style/HARDWARE.jpg"); background-repeat:no-repeat;background-size: cover;background-attachment: fixed;}
+body {background-image: url("../pict/HARDWARE.jpg"); background-repeat:no-repeat;background-size: cover;background-attachment: fixed;}
 .header: {display: flex; width: 100%; justify-content: space-around;}
