@@ -41,3 +41,4 @@ nav {display: flex;
 h2 {color: brown}
 .elso, .masodik, .harmadik {margin-right: 40px; text-align: justify;background-color: rgba(150, 0, 150, 0.6)}
 .kep1 {width: 100%}
+.kep {text-align: center; text-decoration: underline;}
