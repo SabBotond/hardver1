@@ -18,7 +18,7 @@ body {background-image: url(".pict/HARDWARE.jpg");
     font-weight:bolder;
     box-shadow:3px 3px 3px black}
 
-.img9et {width:100%;
+.img9et {width:20%;
     padding:10px;
     outline:3px solid black;
     border-radius:10%;}
