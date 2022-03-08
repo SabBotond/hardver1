@@ -1,5 +1,5 @@
 * {box-sizing: border-box;}
-body {background-image: url("../pict/HARDWARE.jpg");
+body {background-image: url("./pict/HARDWARE.jpg");
        background-repeat: no-repeat;
        background-size: cover;
        background-attachment: fixed;}
@@ -40,14 +40,23 @@ nav {display: flex;
     box-shadow: 3px 3px 3px black;}
     
 h2 {color: brown}
+
 .kep1 {width: 100%}
-.kep {text-align: center; text-decoration: underline;}
+
+.kep {text-align: center;
+text-decoration: underline;}
 
 .elso, .masodik, .harmadik {margin-right: 40px;
 text-align: justify;
-background-color: rgba(197, 187, 16, 0.6)}
+background-color: rgba(197, 187, 16, 0.6);
+border-left: 10px solid orange;}
+
 .wrapper {display: flex;
 flex-direction: row;
 width:80%;
 margin-left: auto;
-margin-right; auto;}
+margin-right: auto;
+text-align:center;}
+
+.stb {border-color: black;}
+p {padding: 1em;}
