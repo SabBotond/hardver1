@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A 9e osztály oldala a gardverelemekről</title>
-    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!--A fejléc kezdete-->
@@ -49,48 +49,65 @@
     
     
     
-    <div class="elso">
-        
-    <div><img src= "./pict/ssd3.jpg" alt="asd" class="kep1"></div>
-  <h2 class="kep">Róla:</h2>
-  <p>Az SSD mint szó, magyarra fordítva nagyjából ‘tartós állapotú meghajtó’ -t jelent, ami arra utal, hogy nincs benne mozgó alkatrész (szemben a HDD-vel), így rögtön biztonságban érezhetjük <br>
-  magunkat a kopással,  ütődéssel szemben. Az SSD-nél jóval hosszabb élettartamra számíthatunk az pénzünkért cserébe, viszont kisebb adattároló kapacitásra amit a sebességével hivatott ellensúlyozni.<br>
-  Az SSD voltaképpen a merevlemezeket hivatott leváltani, ami szerencsére egyre jobban meg is valósul. Működési elvét tekintve hasonlít a memóriakártyákhoz, használati módja pedig a HDD-hez,<br>
-  szinte a kettő ötvözete, ahol a közepes mennyiségű adattárolás és iszonyatos sebesség a legjelentősebb előny.<br>
-  Az ssd az egy tiszta elektronika eszköz egy Flas eszköz továbbfejlesztett változata. Nincs benne mechanikai rész ami forogna, egy memória alapu háttértároló.<br>
-  Két fő memória egysége van.</p>
-    </div>
-    
-    
+    <div class="elso">        
+    <div><img src= "./pict/mukodese.jpg" alt="asd" class="kep1"></div>
+    <h2 class="kep">Működési elve</h2>
+    <p>Az SSD-k két legfontosabb alkotóeleme a (NAND) flash chip illetve a vezérlőelektronika. Előbbi az adattárolásért felel (normál HDD-k esetén ezt a feladatot az adattároló tányérok látják el), utóbbi pedig az írási/olvasási műveleteket végzi, amely sokkal komplexebb feladat, mint egy normál HDD esetében – hogy miért, az rögtön kiderül.
+
+A NAND flash chipek működési elvét nem kell mélyebben megértenünk, az alapismeretek azonban fontosak. A NAND chipek belső szerkezete rácsos felépítésű, s a rácspontok jelentik a biteket. Minden rácspont egy tranzisztort tartalmaz, amelyben egy vezérlő és egy követő kapu található. A követő kapu töltöttségi szintje egyben meghatározza a vezetőképességét is. Ha az elektronika feszültséget közöl a vezérlőkapuval, akkor az elektronágyúként viselkedik, és az elektronok átvándorolnak a követőkapuba (növelve annak feszültségét). A kapuk között egy vékony oxidréteg húzódik, amelynek szerepe az, hogy az így kialakult töltést megtartsa a követőkapuban akkor is, amikor a vezérlőkapu már nincs feszültség alatt.
+</p>
+</div>
+
     
     
 <div class="masodik">
-    <div><img src="./pict/ssd1.jpg" alt="asd"width=20% class="kep1"></div>
-    
-  
+    <div><img src="./pict/ssd1.png" alt="asd"width=20% class="kep1"></div>
 <h2 class="kep">Fajtái:</h2>
+<p>
   <h3>Három fő fajtája létezik:</h3><br>
   <h3>SLC (single-level cell)</h3><br>
-  <p>Cellánként egy bit adatot tud eltárolni ezért gyorsabb is, mivel a bit helye gyorsabban megálapítható. Az SLC tipusú SSD-nek<br>
+  Cellánként egy bit adatot tud eltárolni ezért gyorsabb is, mivel a bit helye gyorsabban megálapítható. Az SLC tipusú SSD-nek<br>
   ezért hosszabb is az élettartama. mert a cellák kevésbé használódnak írás-olvasás közben. Általában ezek a fajta tárolók hozzávetőleg 100 000 írási ciklus<br>
   élettartamúak.<br>
-    </div>
+  <h3>MLC (multi-level cell)</h3>
+  cellánként kettő bitet tárol, a <h3>TLC (triple-level cell)</h3> cellánként pedig három bitet tárol. Ezért ezeknek a<br>
+  tárolóegységeknek rövidebb az élettartama a(z) SLC tipusú-hoz képest, mert az írási-olvasási műveletek gyakoribbak az adott<br>
+  cellán, ezért a tárolóegység jobban használódik, "fárad" (Wear Level jelenség). AZ előbbi 3000, az utóbbipedig csak körlbelül<br>
+  1000 írási ciklust "bír ki". Ezért a vezérlő chip nyilvántartja a blokk állapotát és az írási folyamat során egyenletesen terheli a<br>
+  blokkokat. Tehát a vezérlő mesterségese töredezetté teszi a blokkokat.<br>
+  <h2>Ezért soha nem szabad az SSD esetében használni a töredezettségmentesítést!</h2><br>
+  <h2>De vannak még</h2>
+  <h3>DRAM SSD</h3>
+    Tápellátást igénylő (annak megszűnése esetén törlődő) memóriaelemeket tartalmazó tömbökből épül fel, mint például a számítógépek központi memóriája.
+    Ez rendkívül gyors írást, olvasást és keresést biztosít. Nagy adatbázisok és grafikus alkalmazások sebességének növelésére használják. Ezek a meghajtók
+    akkumulátorral rendelkeznek az adatvesztés megakadályozására, a drágább modelleket mentőlemezzel is ellátják, az áramkimaradás esetén fellépő adatvesztés kivédésére.
+    Előnyük a gyorsaság és az egyszerű felépítés. Hátrányuk a magas ár – 80-800 USD/gigabájt –, valamint a nagy energiafelvétel, magas fogyasztás és ennek következtében a melegedés. Felhasználásuk ipari és katonai téren jelentős.
+  <h3>Flash SSD</h3>
+  A nem felejtő memórián alapuló SSD-k (NAND SSD) a 2000-es évek második felében terjedtek el, az alacsonyabb ár miatt – 3-10 USD/gigabájt – egyre nagyobb szerepet kaptak. A flashmemória leglényegesebb tulajdonsága, hogy áramfelhasználás nélkül is megőrzi az adatokat. Sebessége elmarad a DRAM mögött. A memóriacellák csak korlátozott számú írás-olvasást képesek elviselni, így ez a paraméter határozza meg az eszköz élettartamát. A flash memóriás tárolók szervezése bonyolultabb a DRAM-énál, a különböző gyártók különféle fizikai felépítéssel, kontroller- és hibajavító algoritmusokkal igyekeznek elkerülni a flash memóriacellák „halálából” adódó adatvesztést, valamint a cellák egyenletes terhelését biztosítani. A flash alapú SSD-knél négy technológiát lehet megkülönböztetni: a SLC (Single Level Cell), MLC (Multi Level Cell), TLC (Triple Level Cell) és a QLC (quad-level cells) technológiákat. SLC technológia esetén egy memóriacellában egy bit tárolódik, az MLC esetén 2, a TLC esetén 3, míg a QLC esetén 4.[3] Az SLC gyorsabb, hosszabb életű és drágább, mint az MLC, valamint az MLC előnyei ugyanezek a TLC-vel szemben. Ugyanez vonatkozik a TLC és QLC SSD-kre is.
+  <h3>SSD gyártók</h3>
+  A-DATA, Active Media Products, AMD, Apacer, Corsair, Crucial, Compustocx, Fusion, Intel, Kingmax, Kingston, Memoright, Team Group, Toshiba, pureSilicon, SanDisk, Samsung, Seagate, Western Digita3
+</p>
+</div>
     
     
     
     
    <div class="harmadik">       
        <div><img src="./pict/ssd2.jpg" alt="asd" class="kep1"></div>
-  <h2 class="kep">MLC (multi-level cell)</h2>
-       
-       cellánként kettő bitet tárol, a <h3>TLC (triple-level cell)</h3> cellánként pedig három bitet tárol. Ezért ezeknek a<br>
-  tárolóegységeknek rövidebb az élettartama a(z) SLC tipusú-hoz képest, mert az írási-olvasási műveletek gyakoribbak az adott<br>
-  cellán, ezért a tárolóegység jobban használódik, "fárad" (Wear Level jelenség). AZ előbbi 3000, az utóbbipedig csak körlbelül<br>
-  1000 írási ciklust "bír ki". Ezért a vezérlő chip nyilvántartja a blokk állapotát és az írási folyamat során egyenletesen terheli a<br>
-  blokkokat. Tehát a vezérlő mesterségese töredezetté teszi a blokkokat.<br></p>
-  <h2>Ezért soha nem szabad az SSD esetében használni a töredezettségmentesítést!</h2>
+       <h2 class="kep">Róla:</h2>
+       <p>Az SSD mint szó, magyarra fordítva nagyjából ‘tartós állapotú meghajtó’ -t jelent, ami arra utal, hogy nincs benne mozgó alkatrész (szemben a HDD-vel), így rögtön biztonságban érezhetjük <br>
+       magunkat a kopással,  ütődéssel szemben. Az SSD-nél jóval hosszabb élettartamra számíthatunk az pénzünkért cserébe, viszont kisebb adattároló kapacitásra amit a sebességével hivatott ellensúlyozni.<br>
+       Az SSD voltaképpen a merevlemezeket hivatott leváltani, ami szerencsére egyre jobban meg is valósul. Működési elvét tekintve hasonlít a memóriakártyákhoz, használati módja pedig a HDD-hez,<br>
+       szinte a kettő ötvözete, ahol a közepes mennyiségű adattárolás és iszonyatos sebesség a legjelentősebb előny.<br>
+       Az ssd az egy tiszta elektronika eszköz egy Flas eszköz továbbfejlesztett változata. Nincs benne mechanikai rész ami forogna, egy memória alapu háttértároló.<br>
+       Két fő memória egysége van
+       Kellőképp drága mulatság – még ennyi év után is – SSD meghajtót vásárolni a laptopodba, és korántsem mindegy, hogy mennyi ideig fogja bírni.
+       Az SSD meghajtók flash RAM modulok segítségével tárolják adataid, és mint ilyenek, teljes mértékben immunisak bármilyen külső fizikai behatásra.
+       Míg egy leejtett HDD rendszerint azonnal tönkremegy, de legalábbis komoly adatvesztéssel kell számolnod, addig egy SSD-nek ez meg se kottyan.
+       Természetesen, mint minden éremnek, ennek is két oldala van, az SSD meghajtóknak is megvannak a saját nyűgjeik. Bármikor, amikor „írsz” az SSD
+       meghajóra, csökken a flash RAM modulok élettartama. Ha nem most olvasol először az SSD-kről, akkor valószínűleg nagy újdonságot nem mondtam.
     <h3>Árak:</h3>
-    <p>7000Ft-2378941Ft között található/beszerezhető</p>
+    <p>7000Ft-2378941Ft között található/beszerezhető</p></p>
   </div>
     </div>
     
